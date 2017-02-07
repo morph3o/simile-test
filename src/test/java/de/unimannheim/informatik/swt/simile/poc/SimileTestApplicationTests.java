@@ -1,4 +1,4 @@
-package de.uni.mannheim.simile.test;
+package de.unimannheim.informatik.swt.simile.poc;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
