@@ -6,10 +6,8 @@ public class Base64 {
         throw new UnsupportedOperationException();
     }
 
-    /*
     public byte[] decode(char[] encoded) {
         throw new UnsupportedOperationException();
     }
-    */
 
 }
