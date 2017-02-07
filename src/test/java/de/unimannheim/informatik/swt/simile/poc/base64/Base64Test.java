@@ -5,7 +5,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertArrayEquals;
 
-public class Base64Tests {
+public class Base64Test {
 
     @Test
     public void test_rfc4648() throws Exception{
