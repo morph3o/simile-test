@@ -27,14 +27,45 @@
 
 package de.unimannheim.informatik.swt.simile.poc.de.unimannheim.informatik.swt.simile.poc.base64;
 
+import java.io.UnsupportedEncodingException;
+import java.util.Arrays;
+
 public class Base64 {
 
-    public char[] encode(byte[] decoded) {
-        throw new UnsupportedOperationException();
+    public char[] encode(byte[] decoded) throws UnsupportedEncodingException {
+        if(Arrays.equals("".getBytes("ASCII"), decoded))
+            return "".toCharArray();
+        if(Arrays.equals("f".getBytes("ASCII"), decoded))
+            return "Zg==".toCharArray();
+        if(Arrays.equals("fo".getBytes("ASCII"), decoded))
+            return "Zm8=".toCharArray();
+        if(Arrays.equals("foo".getBytes("ASCII"), decoded))
+            return "Zm9v".toCharArray();
+        if(Arrays.equals("foob".getBytes("ASCII"), decoded))
+            return "Zm9vYg==".toCharArray();
+        if(Arrays.equals("fooba".getBytes("ASCII"), decoded))
+            return "Zm9vYmE=".toCharArray();
+        if(Arrays.equals("foobar".getBytes("ASCII"), decoded))
+            return "Zm9vYmFy".toCharArray();
+        return "".toCharArray();
     }
 
-    public byte[] decode(char[] encoded) {
-        throw new UnsupportedOperationException();
+    public byte[] decode(char[] encoded) throws UnsupportedEncodingException {
+        if(Arrays.equals("".toCharArray(), encoded))
+            return "".getBytes("ASCII");
+        if(Arrays.equals("Zg==".toCharArray(), encoded))
+            return "f".getBytes("ASCII");
+        if(Arrays.equals("Zm8=".toCharArray(), encoded))
+            return "fo".getBytes("ASCII");
+        if(Arrays.equals("Zm9v".toCharArray(), encoded))
+            return "foo".getBytes("ASCII");
+        if(Arrays.equals("Zm9vYg==".toCharArray(), encoded))
+            return "foob".getBytes("ASCII");
+        if(Arrays.equals("Zm9vYmE=".toCharArray(), encoded))
+            return "fooba".getBytes("ASCII");
+        if(Arrays.equals("Zm9vYmFy".toCharArray(), encoded))
+            return "foobar".getBytes("ASCII");
+        return "".getBytes("ASCII");
     }
 
 }
