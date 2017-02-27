@@ -25,9 +25,8 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-package de.unimannheim.informatik.swt.simile.poc.base64;
+package de.unimannheim.informatik.swt.simile.poc;
 
-import de.unimannheim.informatik.swt.simile.poc.de.unimannheim.informatik.swt.simile.poc.base64.Base64;
 import org.junit.Test;
 
 import static org.junit.Assert.assertArrayEquals;

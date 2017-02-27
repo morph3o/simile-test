@@ -25,7 +25,7 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-package de.unimannheim.informatik.swt.simile.poc.de.unimannheim.informatik.swt.simile.poc.base64;
+package de.unimannheim.informatik.swt.simile.poc;
 
 import java.io.UnsupportedEncodingException;
 import java.util.Arrays;
